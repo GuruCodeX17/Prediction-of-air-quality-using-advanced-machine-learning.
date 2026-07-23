@@ -31,3 +31,14 @@ print(df.isnull().sum())
 # Statistical Summary
 print("\nStatistical Summary:")
 print(df.describe())
+
+import matplotlib.pyplot as plt
+
+# Histogram
+df["CO(GT)"].hist(bins=20)
+
+plt.title("Distribution of CO(GT)")
+plt.xlabel("CO(GT)")
+plt.ylabel("Frequency")
+
+plt.show()
