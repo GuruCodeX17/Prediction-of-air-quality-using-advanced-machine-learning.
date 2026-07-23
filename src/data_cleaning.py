@@ -7,6 +7,8 @@ df = pd.read_csv("data/raw/AirQualityUCI.csv", sep=";")
 df = df.drop(columns=["Unnamed: 15", "Unnamed: 16"])
 
 # Replace invalid values (-200) with NaN
+
+
 df.replace(-200, pd.NA, inplace=True)
 
 print("Shape after cleaning:", df.shape)
